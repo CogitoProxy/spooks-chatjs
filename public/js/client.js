@@ -296,7 +296,7 @@ $(function() {
     CLIENT.on('change:notification', function(m, notification) {
         updateTitle();
         CLIENT.show({
-            type : 'note-message',
+            type : 'motd-message',
             message : notification
         });
     });
