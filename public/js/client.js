@@ -661,7 +661,7 @@ $(function() {
             params : [ 'topic$' ]
         },
         note : {
-            access_level : 0,
+            access_level : 1,
             params : [ 'message$' ]
         },
         clear : function() {
@@ -746,7 +746,7 @@ $(function() {
             params : [ 'theme_style$' ]
         },
         reset_user : {
-            access_level : 0,
+            access_level : 1,
             params : [ 'nick' ]
         },
         get : {
