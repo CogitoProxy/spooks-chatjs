@@ -660,7 +660,7 @@ $(function() {
             access_level : 2,
             params : [ 'topic$' ]
         },
-        note : {
+        motd : {
             access_level : 1,
             params : [ 'message$' ]
         },
@@ -753,9 +753,9 @@ $(function() {
             params : [ 'attribute_name' ],
             handler : function(params) {
                 var attribute_name = params.attribute_name;
-                var valid = 'color font style flair mute mute_speak images note topic'.split(' ');
+                var valid = 'color font style flair mute mute_speak images motd topic'.split(' ');
                 if (valid.indexOf(attribute_name) >= 0) {
-                    if (attribute_name == 'note') {
+                    if (attribute_name == 'motd') {
                         attribute_name = 'notification';
                     }
                     CLIENT.show({
